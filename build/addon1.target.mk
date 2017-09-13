@@ -45,10 +45,10 @@ CFLAGS_OBJC_Debug :=
 CFLAGS_OBJCC_Debug :=
 
 INCS_Debug := \
-	-I/Users/macuser/.node-gyp/iojs-1.6.13/include/node \
-	-I/Users/macuser/.node-gyp/iojs-1.6.13/src \
-	-I/Users/macuser/.node-gyp/iojs-1.6.13/deps/uv/include \
-	-I/Users/macuser/.node-gyp/iojs-1.6.13/deps/v8/include
+	-I/Users/russgreer/.node-gyp/iojs-1.6.13/include/node \
+	-I/Users/russgreer/.node-gyp/iojs-1.6.13/src \
+	-I/Users/russgreer/.node-gyp/iojs-1.6.13/deps/uv/include \
+	-I/Users/russgreer/.node-gyp/iojs-1.6.13/deps/v8/include
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=addon1' \
@@ -91,13 +91,13 @@ CFLAGS_OBJC_Release :=
 CFLAGS_OBJCC_Release :=
 
 INCS_Release := \
-	-I/Users/macuser/.node-gyp/iojs-1.6.13/include/node \
-	-I/Users/macuser/.node-gyp/iojs-1.6.13/src \
-	-I/Users/macuser/.node-gyp/iojs-1.6.13/deps/uv/include \
-	-I/Users/macuser/.node-gyp/iojs-1.6.13/deps/v8/include
+	-I/Users/russgreer/.node-gyp/iojs-1.6.13/include/node \
+	-I/Users/russgreer/.node-gyp/iojs-1.6.13/src \
+	-I/Users/russgreer/.node-gyp/iojs-1.6.13/deps/uv/include \
+	-I/Users/russgreer/.node-gyp/iojs-1.6.13/deps/v8/include
 
 OBJS := \
-	$(obj).target/$(TARGET)/hello.o
+	$(obj).target/$(TARGET)/addon1.o
 
 # Add to the list of files we specially track dependencies for.
 all_deps += $(OBJS)

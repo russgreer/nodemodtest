@@ -56,10 +56,10 @@
     "v8_no_strict_aliasing": 1,
     "v8_optimized_debug": 0,
     "v8_random_seed": 0,
-    "v8_use_snapshot": "false",
+    "v8_use_snapshot": "true",
     "want_separate_host_toolset": 0,
     "xcode_version": "7.0",
-    "nodedir": "/Users/macuser/.node-gyp/iojs-1.6.13",
+    "nodedir": "/Users/russgreer/.node-gyp/iojs-1.6.13",
     "standalone_static_library": 1,
     "target": "1.6.13"
   }

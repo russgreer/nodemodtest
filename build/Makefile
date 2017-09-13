@@ -326,7 +326,7 @@ ifeq ($(strip $(foreach prefix,$(NO_LOAD),\
 endif
 
 quiet_cmd_regen_makefile = ACTION Regenerating $@
-cmd_regen_makefile = cd $(srcdir); /usr/local/lib/node_modules/node-gyp/gyp/gyp_main.py -fmake --ignore-environment "--toplevel-dir=." -I/Users/macuser/nodemod1/build/config.gypi -I/usr/local/lib/node_modules/node-gyp/addon.gypi -I/Users/macuser/.node-gyp/iojs-1.6.13/common.gypi "--depth=." "-Goutput_dir=." "--generator-output=build" "-Dlibrary=shared_library" "-Dvisibility=default" "-Dnode_root_dir=/Users/macuser/.node-gyp/iojs-1.6.13" "-Dnode_gyp_dir=/usr/local/lib/node_modules/node-gyp" "-Dnode_lib_file=/Users/macuser/.node-gyp/iojs-1.6.13/<(target_arch)/iojs.lib" "-Dmodule_root_dir=/Users/macuser/nodemod1" "-Dnode_engine=v8" binding.gyp
+cmd_regen_makefile = cd $(srcdir); /usr/local/lib/node_modules/node-gyp/gyp/gyp_main.py -fmake --ignore-environment "--toplevel-dir=." -I/Users/russgreer/nodemodtest/build/config.gypi -I/usr/local/lib/node_modules/node-gyp/addon.gypi -I/Users/russgreer/.node-gyp/iojs-1.6.13/common.gypi "--depth=." "-Goutput_dir=." "--generator-output=build" "-Dlibrary=shared_library" "-Dvisibility=default" "-Dnode_root_dir=/Users/russgreer/.node-gyp/iojs-1.6.13" "-Dnode_gyp_dir=/usr/local/lib/node_modules/node-gyp" "-Dnode_lib_file=/Users/russgreer/.node-gyp/iojs-1.6.13/<(target_arch)/iojs.lib" "-Dmodule_root_dir=/Users/russgreer/nodemodtest" "-Dnode_engine=v8" binding.gyp
 Makefile: $(srcdir)/../../../usr/local/lib/node_modules/node-gyp/addon.gypi $(srcdir)/build/config.gypi $(srcdir)/binding.gyp $(srcdir)/../.node-gyp/iojs-1.6.13/common.gypi
 	$(call do_cmd,regen_makefile)
 
